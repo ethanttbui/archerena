@@ -9,7 +9,7 @@ public class PlayerManager : NetworkBehaviour {
     public GameObject utilities;
     public CharacterManager[] characters;
 
-    static bool[] characterUsed = new bool[] { false, false };
+    static bool[] characterUsed = null;
 
     PlayerHealth playerHealth;
     PlayerControl playerControl;
@@ -24,9 +24,17 @@ public class PlayerManager : NetworkBehaviour {
         rigidBody = GetComponent<Rigidbody2D>();
         networkAnimator = GetComponent<NetworkAnimator>();
 
+        // Initialize characterUsed array
+        if (characterUsed == null) {
+            characterUsed = new bool[characters.Length];
+            for (int i = 0; i < characters.Length; i++) {
+                characterUsed[i] = false;
+            }
+        }
+
         // Handle changing character
         int characterIndex = -1;
-        for (int i = 0; i < characterUsed.Length; i++) {
+        for (int i = 0; i < characters.Length; i++) {
             if (!characterUsed[i]) {
                 characterUsed[i] = true;
                 characterIndex = i;
@@ -34,8 +42,9 @@ public class PlayerManager : NetworkBehaviour {
             }
         }
 
+        // If no character avalable, just pick the first one (temporary)
         if (characterIndex == -1) {
-            characterIndex = Random.Range(0, characters.Length - 1);
+            characterIndex = 0;
         }
 
         character = characters[characterIndex];
@@ -73,6 +82,10 @@ public class PlayerManager : NetworkBehaviour {
     }
 
     void Update() {
+        if (!isLocalPlayer) {
+            return;
+        }
+
         // Game over when health is 0
         if (playerHealth.Health == 0) {
             animator.SetBool("Dead", true);

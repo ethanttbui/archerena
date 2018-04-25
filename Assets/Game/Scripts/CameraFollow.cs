@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 public class CameraFollow : MonoBehaviour {
-    public Transform playerTransform;
+    public Transform playerTransform = null;
     public int depth = -20;
 
     public void setTarget(Transform target) {
