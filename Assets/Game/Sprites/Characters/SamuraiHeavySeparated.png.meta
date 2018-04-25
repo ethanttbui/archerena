@@ -1,0 +1,328 @@
+fileFormatVersion: 2
+guid: 3953b54d8c4b557499bd953d3e6679dd
+timeCreated: 1524643098
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Bow
+    21300002: Head
+    21300004: HeadDead
+    21300006: UpperRightArm
+    21300008: Torso
+    21300010: UpperLeftArm
+    21300012: LowerRightArm
+    21300014: Pelvis
+    21300016: LowerLeftArm
+    21300018: RightHand
+    21300020: UpperRightLeg
+    21300022: UpperLeftLeg
+    21300024: LeftHand
+    21300026: LowerRightLeg
+    21300028: LowerLeftLeg
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bow
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 123
+        width: 92
+        height: 296
+      alignment: 9
+      pivot: {x: 0.7279635, y: 0.4891479}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Head
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 339
+        width: 170
+        height: 152
+      alignment: 9
+      pivot: {x: 0.560117, y: 0.062110454}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: HeadDead
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 335
+        width: 170
+        height: 152
+      alignment: 9
+      pivot: {x: 0.5968553, y: 0.073243186}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UpperRightArm
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 240
+        width: 56
+        height: 64
+      alignment: 9
+      pivot: {x: 0.78699905, y: 0.7472205}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Torso
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 227
+        width: 80
+        height: 84
+      alignment: 9
+      pivot: {x: 0.54103184, y: 0.099613555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UpperLeftArm
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 247
+        width: 53
+        height: 65
+      alignment: 9
+      pivot: {x: 0.28574646, y: 0.7286856}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LowerRightArm
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 175
+        width: 45
+        height: 44
+      alignment: 9
+      pivot: {x: 0.7271088, y: 0.93873286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Pelvis
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 148
+        width: 95
+        height: 63
+      alignment: 9
+      pivot: {x: 0.51195264, y: 1.0122575}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LowerLeftArm
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 187
+        width: 59
+        height: 49
+      alignment: 9
+      pivot: {x: 0.17354329, y: 0.91973007}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: RightHand
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 104
+        width: 47
+        height: 47
+      alignment: 9
+      pivot: {x: 0.5241605, y: 0.90217143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UpperRightLeg
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 104
+        width: 36
+        height: 39
+      alignment: 9
+      pivot: {x: 0.52568734, y: 1.0142047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: UpperLeftLeg
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 102
+        width: 33
+        height: 37
+      alignment: 9
+      pivot: {x: 0.50824714, y: 1.0866208}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LeftHand
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 133
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LowerRightLeg
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 29
+        width: 42
+        height: 60
+      alignment: 9
+      pivot: {x: 0.57747144, y: 0.7454487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: LowerLeftLeg
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 28
+        width: 42
+        height: 59
+      alignment: 9
+      pivot: {x: 0.5045733, y: 0.7574534}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

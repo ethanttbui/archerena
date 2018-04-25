@@ -3,7 +3,6 @@ using UnityEngine.Networking;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(Animator))]
 public class PlayerControl : NetworkBehaviour {
 
     public float walkingSpeed = 15f;
@@ -16,14 +15,15 @@ public class PlayerControl : NetworkBehaviour {
     public Transform wallCheck;
     public LayerMask obstacleLayerMask;
     public GameObject arrowPrefab;
-    public Transform arrowSpawn;
-    public Transform upperBody;
     public Slider arrowStrengthBar;
+    public CharacterManager character;
 
     bool onGround = true;
     bool onWall = false;
     float arrowSpeed = 0f;
     Rigidbody2D rigidBody;
+    Transform arrowSpawn;
+    Transform upperBody;
     Animator animator;
 
     [SyncVar]
@@ -34,10 +34,13 @@ public class PlayerControl : NetworkBehaviour {
 
     void Awake () {
         rigidBody = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
     }
 
     void Start() {
+        arrowSpawn = character.arrowSpawn;
+        upperBody = character.upperBody;
+        animator = character.animator;
+
         arrowStrengthBar.value = 0f;
         transform.localScale = localScale;
     }
