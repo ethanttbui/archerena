@@ -23,8 +23,6 @@ public class ArcherenaNetworkManager : NetworkManager {
     private void OnPlayerJoined(UnetMsfPlayer player) {
         // Spawn the player object (https://docs.unity3d.com/Manual/UNetPlayers.html)
         // This is just a dummy example, you'll need to create your own object (or not)
-        var playerGameObject = new GameObject();
-        NetworkServer.AddPlayerForConnection(player.Connection, playerGameObject, 0);
     }
 
     private void OnPlayerLeft(UnetMsfPlayer player) {

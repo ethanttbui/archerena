@@ -78,7 +78,7 @@ public class PlayerManager : NetworkBehaviour {
 
         // FOR LOCAL PLAYER ONLY
         // Tell main camera to follow this local player instance
-        Camera.main.GetComponent<CameraFollow>().setTarget(transform);
+        Camera.main.GetComponent<CameraManager>().SetTarget(transform);
     }
 
     void Update() {

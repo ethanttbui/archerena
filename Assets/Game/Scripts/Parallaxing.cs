@@ -21,10 +21,13 @@ public class Parallaxing : MonoBehaviour {
 	}
 	
 	void Update () {
+        // Don't perform parallaxing when the camera jumps too much
         if (Mathf.Abs(prevCamPos.x - mainCam.position.x) > 5) {
             prevCamPos = mainCam.position;
             return;
         }
+        
+        // Perform paralaxing
         for (int i = 0; i < backgrounds.Length; i++) {
             float parallax = (prevCamPos.x - mainCam.position.x) * parallaxScales[i];
             float backgroundTargetPosX = backgrounds[i].position.x + parallax;

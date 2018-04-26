@@ -165,10 +165,17 @@ public class PlayerControl : NetworkBehaviour {
 
     [Command]
     void CmdShoot(int shooterId, Vector2 velocity, Vector3 arrowPos, Quaternion arrowRot) {
-        //RpcSpawnArrow(shooterId, velocity, arrowPos, arrowRot);
         GameObject arrow = Instantiate(arrowPrefab, arrowPos, arrowRot);
         arrow.GetComponent<ArrowManager>().ShooterId = shooterId;
         arrow.GetComponent<Rigidbody2D>().velocity = velocity;
-        NetworkServer.Spawn(arrow);
+        RpcSpawnArrow(shooterId, velocity, arrowPos, arrowRot);
+        //NetworkServer.Spawn(arrow);
+    }
+
+    [ClientRpc]
+    void RpcSpawnArrow(int shooterId, Vector2 velocity, Vector3 arrowPos, Quaternion arrowRot) {
+        GameObject arrow = Instantiate(arrowPrefab, arrowPos, arrowRot);
+        arrow.GetComponent<ArrowManager>().ShooterId = shooterId;
+        arrow.GetComponent<Rigidbody2D>().velocity = velocity;
     }
 }
